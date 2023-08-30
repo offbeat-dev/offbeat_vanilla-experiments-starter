@@ -1,0 +1,32 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.main-section {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 255, 255, 0.15);
+  z-index: 2;
+}
+
+h1 {
+  font-size: 140px;
+}
+
+.underlying-section {
+  position: relative;
+  background: repeating-linear-gradient(
+    0deg,
+    black 0px,
+    black 5px,
+    transparent 5px,
+    transparent 100px,
+    white 100px,
+    white 15px
+  );
+  min-block-size: 200vh;
+}

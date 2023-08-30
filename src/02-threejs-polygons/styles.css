@@ -1,0 +1,51 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.canvas-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    gray 0px,
+    gray 1px,
+    transparent 1px,
+    transparent 50px,
+    white 50px,
+    white 15px
+  );
+  z-index: -1;
+}
+
+.canvas-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    gray 0px,
+    gray 1px,
+    transparent 1px,
+    transparent 50px,
+    white 50px,
+    white 15px
+  );
+  z-index: -1;
+}
