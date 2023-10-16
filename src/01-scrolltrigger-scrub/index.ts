@@ -1,4 +1,3 @@
-import "./styles.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -20,27 +19,27 @@ tl.to(content, {
   ease: "none",
 });
 
-const tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: mainSection,
-    start: "top top",
-    end: "+=100%",
-    scrub: 5,
-  },
-});
+// const tl2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: mainSection,
+//     start: "top top",
+//     end: "+=100%",
+//     scrub: 5,
+//   },
+// });
 
-tl2.to(
-  mainSection,
-  {
-    scale: 5,
-  },
-  0
-);
+// tl2.to(
+//   mainSection,
+//   {
+//     scale: 5,
+//   },
+//   0
+// );
 
-tl2.to(
-  mainSection,
-  {
-    opacity: 0,
-  },
-  0.5
-);
+// tl2.to(
+//   mainSection,
+//   {
+//     opacity: 0,
+//   },
+//   0.5
+// );
