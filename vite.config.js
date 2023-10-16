@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        main: resolve(__dirname, "index.html"),
         "01-scrolltrigger-scrub": resolve(
           __dirname,
           "pages/01-scrolltrigger-scrub/index.html"
