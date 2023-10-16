@@ -5,7 +5,7 @@ import SmoothScroller from "./SmothScroller";
 
 let scroll = 0;
 const scroller = new SmoothScroller();
-scroller.lenis?.on("scroll", (e) => {
+scroller.lenis?.on("scroll", (e: any) => {
   //normalize scroll between 0 and 1
   scroll = e.animatedScroll / window.innerHeight;
 });
