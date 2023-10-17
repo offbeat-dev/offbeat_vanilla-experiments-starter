@@ -2,7 +2,6 @@ import "../styles/globals.scss";
 import "./styles.css";
 import * as THREE from "three";
 import SmoothScroller from "./SmothScroller";
-import "../styles/globals.scss";
 
 let scroll = 0;
 const scroller = new SmoothScroller();

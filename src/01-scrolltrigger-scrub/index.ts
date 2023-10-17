@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "../styles/globals.scss";
+import "./styles.css";
 
 gsap.registerPlugin(ScrollTrigger);
 const content = document.querySelector(".content");
