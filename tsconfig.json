@@ -20,5 +20,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "src/04-react-unstated-counter/App.jsx.jsx",
+    "src/04-react-unstated-counter/index.jsx.jsx",
+    "src/03-react-starter/App.jsx.jsx",
+    "src/03-react-starter/index.jsx.jsx",
+    "src/03-react-starter",
+    "src/04-react-unstated-counter"
+  ]
 }
