@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.random-color-generator {
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  inline-size: 100%;
+  text-transform: uppercase;
+  min-block-size: 100vh;
+
+  @media screen and (min-width: 1040px) {
+    flex-direction: row;
+  }
+
+  input {
+    appearance: none;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+    flex-shrink: 1;
+    inline-size: 50px;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .top-row {
+    display: flex;
+  }
+
+  .color-info {
+    display: flex;
+    gap: 20px;
+    flex: 100% 1 1;
+    color: rgb(150, 150, 150);
+    font-size: clamp(3.66rem, 9.49vw + 1.29rem, 8.88rem);
+    font-weight: bold;
+    line-height: 1;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+      flex: 50% 0 0;
+    }
+
+    p {
+      text-align: end;
+    }
+  }
+
+  .color-info-and-button {
+    margin-inline: auto;
+    flex: 100% 1 1;
+
+    @media screen and (min-width: 768px) {
+      flex: 50% 0 0;
+    }
+  }
+
+  .color-generation {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .colorBox {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0;
+  }
+
+  .color-box {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      inline-size: 200px;
+    }
+  }
+}
+
+// --font-size-sm: clamp(1.5rem, 2.39vw + 0.9rem, 2.81rem);
+// --font-size-base: clamp(1.88rem, 3.41vw + 1.02rem, 3.75rem);
+// --font-size-md: clamp(2.34rem, 4.83vw + 1.14rem, 5rem);
+// --font-size-lg: clamp(2.93rem, 6.79vw + 1.23rem, 6.66rem);
+// --font-size-xl: clamp(3.66rem, 9.49vw + 1.29rem, 8.88rem);
+// --font-size-xxl: clamp(4.58rem, 13.2vw + 1.28rem, 11.84rem);
+// --font-size-xxxl: clamp(5.72rem, 18.29vw + 1.15rem, 15.78rem);

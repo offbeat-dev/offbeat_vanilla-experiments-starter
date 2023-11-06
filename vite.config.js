@@ -25,6 +25,10 @@ export default defineConfig({
           __dirname,
           "src/04-react-unstated-counter/index.html"
         ),
+        "05-react-random-color-generator": resolve(
+          __dirname,
+          "src/05-react-random-color-generator/index.html"
+        ),
       },
     },
   },
