@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import "./styles.css";
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
 const content = document.querySelector(".content");
 const mainSection = document.querySelector(".main-section");
 
