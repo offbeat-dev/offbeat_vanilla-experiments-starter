@@ -4,6 +4,26 @@
   font-weight: 400;
 }
 
+body {  
+  margin: 0;
+  min-height: 100vh;
+  overscroll-behavior-y
+}
+
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+
 .main-section {
   display: grid;
   place-content: center;
@@ -11,10 +31,11 @@
   inset: 0;
   background-color: rgba(0, 255, 255, 0.15);
   z-index: 2;
+  block-size: 100vh;
 }
 
 h1 {
-  font-size: 140px;
+  font-size: clamp(4rem, 5vw, 5rem);
 }
 
 .underlying-section {
@@ -28,5 +49,5 @@ h1 {
     white 100px,
     white 15px
   );
-  min-block-size: 200vh;
+  min-block-size: 150vh;
 }
