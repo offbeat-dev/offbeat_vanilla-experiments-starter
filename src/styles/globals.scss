@@ -3,6 +3,15 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+  max-inline-size: 1200px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 20px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
 .scroll-spacer {
   block-size: 100vh;
   position: relative;
@@ -22,6 +31,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.experiments-title {
+  margin-block-end: 20px;
 }
 
 .experiment-card,

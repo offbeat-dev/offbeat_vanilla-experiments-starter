@@ -10,6 +10,11 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         "threejs-journey": resolve(__dirname, "src/threejs-journey/index.html"),
+        "threejs-journey/lesson-1": resolve(
+          __dirname,
+          "src/threejs-journey/lesson-1/index.html"
+        ),
+
         "01-scrolltrigger-scrub": resolve(
           __dirname,
           "src/01-scrolltrigger-scrub/index.html"
