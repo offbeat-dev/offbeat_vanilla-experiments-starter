@@ -18,7 +18,14 @@ body {
   }
 }
 
-.experiment-card {
+.lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiment-card,
+.lesson-card {
   background-color: #e5ff54;
   border: 2px solid black;
   color: black;
@@ -54,6 +61,27 @@ body {
     margin: 0;
     text-align: end;
     transition: transform 0.2s ease-in-out;
+  }
+}
+
+.lesson-card {
+  align-items: flex-start;
+  background-color: #705df2;
+  color: white;
+  min-block-size: 150px;
+
+  &:hover {
+    background-color: white;
+    color: #705df2;
+
+    h3 {
+      transform: translate(0, -10px);
+    }
+
+    .experiment-pill {
+      background-color: #705df2;
+      color: white;
+    }
   }
 }
 

@@ -9,6 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        "threejs-journey": resolve(__dirname, "src/threejs-journey/index.html"),
         "01-scrolltrigger-scrub": resolve(
           __dirname,
           "src/01-scrolltrigger-scrub/index.html"

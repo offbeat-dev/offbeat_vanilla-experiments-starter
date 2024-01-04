@@ -6,49 +6,32 @@ import "./styles.css";
 
 const content = document.querySelector(".content");
 const mainSection = document.querySelector(".main-section");
+
+//lenis + gsap setup
 const lenis = new Lenis({
-  lerp: 0.5,
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smoothTouch: false,
+  touchMultiplier: 2,
 });
 lenis.on("scroll", ScrollTrigger.update);
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
+gsap.ticker.lagSmoothing(0);
+
+//gsap plugin registration + timeline definition
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
+  ease: "none",
   scrollTrigger: {
     trigger: mainSection,
-    start: "center center",
-    end: "center start",
-    scrub: 2,
+    start: "bottom bottom",
+    end: "bottom top",
+    scrub: true,
   },
 });
-
 tl.to(content, {
-  yPercent: -10,
+  scale: 2,
   ease: "none",
 });
-
-// const tl2 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: mainSection,
-//     start: "top top",
-//     end: "+=100%",
-//     scrub: 5,
-//   },
-// });
-
-// tl2.to(
-//   mainSection,
-//   {
-//     scale: 5,
-//   },
-//   0
-// );
-
-// tl2.to(
-//   mainSection,
-//   {
-//     opacity: 0,
-//   },
-//   0.5
-// );
