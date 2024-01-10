@@ -14,7 +14,18 @@ export default defineConfig({
           __dirname,
           "src/threejs-journey/lesson-1/index.html"
         ),
-
+        "threejs-journey/lesson-2": resolve(
+          __dirname,
+          "src/threejs-journey/lesson-2/index.html"
+        ),
+        "threejs-journey/lesson-3": resolve(
+          __dirname,
+          "src/threejs-journey/lesson-3/index.html"
+        ),
+        "threejs-journey/lesson-4": resolve(
+          __dirname,
+          "src/threejs-journey/lesson-4/index.html"
+        ),
         "01-scrolltrigger-scrub": resolve(
           __dirname,
           "src/01-scrolltrigger-scrub/index.html"
